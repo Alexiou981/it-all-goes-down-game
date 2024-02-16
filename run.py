@@ -23,7 +23,13 @@ def start_game():
     """
     player_name = input("What is your characters name? \n")
     print(f"Nice to meet you {player_name.capitalize()}. Let the adventure begin... \n")
-    print("After years and years of hard work, blood, sweat and tears, you have finally") 
-    print("managed to save enough money to embark on that journey you've been longing since you were a child.")
+    print("After years and years of hard work, blood, sweat and tears,") 
+    print("you have finally managed to save enough money to embark on")
+    print("that journey you've been longing since you were a child. \n")
+    print("The destination is a magical island in the middle of the") 
+    print("Pacific Ocean with crystal clear waters and golden sands") 
+    print("covering it's perimeter. \n")
+    print("Your departure destination is far away from this location and") 
+    print("your budget allows you to either fly or sail there.")
 
 intro_question()
