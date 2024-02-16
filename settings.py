@@ -6,6 +6,4 @@ def slowprint(text):
         sys.stdout.write(letter)
         sys.stdout.flush()
         time.sleep(0.8/10)
-
-slowprint("this is written slowly on the terminal")
         
