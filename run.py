@@ -4,8 +4,8 @@ def intro_question():
     """
     Welcomes player to the game and asks question to begin the game
     """
+    slowprint("Welcome to It All Goes Down game. \n")
     while True:
-        slowprint("Welcome to It All Goes Down game. \n")
         slowprint("Would you like to embark on this adventure? (Yes/No)")
         user_answer = input()
         if user_answer.capitalize() == "Yes":
@@ -16,7 +16,7 @@ def intro_question():
             slowprint("Oh no, it's so sad to see you go. \n")
             break
         else:
-           slowprint("You've entered an invalid value, please reply with a Yes or No. \n")
+           print("You've entered an invalid value, please reply with a Yes or No. \n")
 
 
 def start_game():
@@ -25,7 +25,12 @@ def start_game():
     and begins to unfold the story of the game.
     """
     player_name = input("What is your characters name? \n")
-    slowprint(f"Nice to meet you {player_name.capitalize()}. Let the adventure begin... \n")
+    while player_name.isnumeric():
+        print("You have entered an invalid value!!!")
+        player_name = input("What is your characters name? \n")
+    else:
+        slowprint(f"Nice to meet you {player_name.capitalize()}. Let the adventure begin... \n")
+    
     slowprint("After years and years of hard work, blood, sweat and tears...") 
     slowprint("You have finally managed to save enough money to embark on")
     slowprint("that journey you've been longing for since you were a child. \n")
