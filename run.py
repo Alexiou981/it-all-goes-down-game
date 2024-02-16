@@ -19,7 +19,7 @@ def intro_question():
 def start_game():
     """
     Start game function, asks the player to provide a character name,
-    and begins to unfold the story of this game.
+    and begins to unfold the story of the game.
     """
     player_name = input("What is your characters name? \n")
     print(f"Nice to meet you {player_name.capitalize()}. Let the adventure begin... \n")
