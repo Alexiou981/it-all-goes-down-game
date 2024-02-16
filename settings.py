@@ -5,5 +5,5 @@ def slowprint(text):
     for letter in text + "\n":
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.8/10)
+        time.sleep(1./10)
         
