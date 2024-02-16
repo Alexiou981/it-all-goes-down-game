@@ -39,4 +39,26 @@ def start_game():
     slowprint("Your departure destination is far away from this location and") 
     slowprint("your budget allows you to either fly or sail there... \n")
 
+def choose_transportation():
+    """
+    Means of transport functions, asks the user which vehicle of choice
+    they prefer and unfolds storing depending on players choice.
+    """
+    slowprint("How would you like to travel? (Plane/Ship)")
+    transportation_vehicle = input()
+    if transportation_vehicle == "Plane":
+        slowprint("You have chosen to travel by aeroplane...")
+        slowprint("You arrive at the airport and check in...")
+        slowprint("You board the aircraft and your flight takes off...")
+    elif transportation_vehicle == "Ship":
+        slowprint("You have chosen to travel by ship...")
+        slowprint("You arrive at the port, get your tickets and board the ship...")
+        slowprint("As soon as you locate the cabin the ship sets sale...")
+        slowprint("Your voyage begins...")
+    else:
+        print("You have entered an incorrect value!!!")
+        print("Means of transportation needs to be either Plane or Ship")
+        choose_transportation()
+
 intro_question()
+choose_transportation()
