@@ -82,10 +82,21 @@ def choose_transportation():
             "OR\n"+
             "Try to remain calm and wait for instructions from the crew?\n\n"+
             "What do you do? (Jump/Stay)\n")
+        jump_or_stay()
     else:
         print("You have entered an incorrect value!!!")
         print("Means of transportation needs to be either Plane or Ship")
         choose_transportation()
+
+def jump_or_stay():
+    jump_stay = input()
+    if jump_stay.capitalize() == "Jump":
+        print("You jumped and swam...")
+    elif jump_stay.capitalize() == "Stay":
+        print("You decide to stay...")
+    else:
+        print("You've entered an invalid value, please reply with Jump or Stay")
+        jump_or_stay()
 
 intro_question()
 choose_transportation()
