@@ -2,7 +2,10 @@ from settings import (
                     slowprint,
                     slowprint_ascii
 )
-from ascii import airplane_or_ship
+from ascii import (
+                    airplane_or_ship,
+                    ship
+    )
 
 def intro_question():
     """
@@ -65,8 +68,10 @@ def choose_transportation():
         slowprint(
             "You have chosen to travel by ship...\n"+
             "You arrive at the port, get your tickets and board the ship...\n"+
-            "As soon as you locate the cabin the ship sets sale...\n\n"+
-            "Your voyage begins and everything seems to be running smooth...\n"+
+            "As soon as you locate the cabin the ship sets sale...\n\n")
+        slowprint_ascii(ship)
+        slowprint(    
+            "\nYour voyage begins and everything seems to be running smooth...\n"+
             "You get yourself comfortable in your luxurious cabin,\n"+
             "and decide to head to the bar...\n\n"+
             "After having tried a few of their finest drinks you start to feel tired...\n"+
