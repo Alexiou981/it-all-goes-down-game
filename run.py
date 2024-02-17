@@ -44,7 +44,7 @@ def start_game():
         "You have finally managed to save enough money to embark on\n"+
         "that journey you've been longing for since you were a child.\n\n"+
         "The destination is a magical island in the middle of the Pacific...\n"+
-        "crystal clear waters and golden sands covering it's perimeter.\n\n"+
+        "Crystal clear waters and golden sands covering it's perimeter.\n\n"+
         "Your departure destination is far away from this location and\n"+
         "your budget allows you to either fly or sail there...\n\n")
 
@@ -63,10 +63,25 @@ def choose_transportation():
             "You board the aircraft and your flight takes off...\n")
     elif transportation_vehicle.capitalize() == "Ship":
         slowprint(
-            "You have chosen to travel by ship...\n" +
-            "You arrive at the port, get your tickets and board the ship...\n" +
-            "As soon as you locate the cabin the ship sets sale...\n" +
-            "Your voyage begins...\n")
+            "You have chosen to travel by ship...\n"+
+            "You arrive at the port, get your tickets and board the ship...\n"+
+            "As soon as you locate the cabin the ship sets sale...\n\n"+
+            "Your voyage begins and everything seems to be running smooth...\n"+
+            "You get yourself comfortable in your luxurious cabin,\n"+
+            "and decide to head to the bar...\n\n"+
+            "After having tried a few of their finest drinks you start to feel tired...\n"+
+            "You return to your cabin and decide to get some sleep...\n\n"+
+            "Several hours later...\n\n"+
+            "A loud noise and an impact that felt like the ship crashed onto something wakes you up...\n"+
+            "You get outside and realise that there is an emergency evacuation procedure going on...\n"+
+            "Everyone is at a state of panic trying to make their way to the nearest emergency boat...\n\n"+
+            "People start to lose control and push each other in order to get through to one of those boats...\n"+
+            "As the time goes by things start to get even worse and you realise that the ship is starting to flip over...\n"+
+            "The time is limited and there's a decision to be made...\n\n"+
+            "Jump in the water and try to survive swimming?\n"+
+            "OR\n"+
+            "Try to remain calm and wait for instructions from the crew?\n\n"+
+            "What do you do? (Jump/Stay)\n")
     else:
         print("You have entered an incorrect value!!!")
         print("Means of transportation needs to be either Plane or Ship")
