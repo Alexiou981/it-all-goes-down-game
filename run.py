@@ -72,11 +72,15 @@ def choose_transportation():
             "After having tried a few of their finest drinks you start to feel tired...\n"+
             "You return to your cabin and decide to get some sleep...\n\n"+
             "Several hours later...\n\n"+
-            "A loud noise and an impact that felt like the ship crashed onto something wakes you up...\n"+
-            "You get outside and realise that there is an emergency evacuation procedure going on...\n"+
-            "Everyone is at a state of panic trying to make their way to the nearest emergency boat...\n\n"+
-            "People start to lose control and push each other in order to get through to one of those boats...\n"+
-            "As the time goes by things start to get even worse and you realise that the ship is starting to flip over...\n"+
+            "A loud noise and an impact that felt like the ship crashed onto something...\n"+
+            "You get outside and realise that there is an emergency evacuation\n" 
+            "procedure happening...\n"+
+            "\nEveryone is at a state of panic trying to make their way\n"+
+            "to the nearest emergency boat...\n"+
+            "People start to lose control and push each other in order to\n"+
+            "get through to one of those boats...\n"+
+            "As the time goes by things start to get even worse\n"+
+            "and you realise that the ship is starting to flip over...\n"+
             "The time is limited and there's a decision to be made...\n\n"+
             "Jump in the water and try to survive swimming?\n"+
             "OR\n"+
@@ -98,5 +102,9 @@ def jump_or_stay():
         print("You've entered an invalid value, please reply with Jump or Stay")
         jump_or_stay()
 
-intro_question()
-choose_transportation()
+
+def main():
+    intro_question()
+    choose_transportation()
+
+main()
