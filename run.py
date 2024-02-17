@@ -78,9 +78,10 @@ def choose_transportation():
             "\nEveryone is at a state of panic trying to make their way\n"+
             "to the nearest emergency boat...\n"+
             "People start to lose control and push each other in order to\n"+
-            "get through to one of those boats...\n"+
+            "get through to one of those boats...\n\n"+
             "As the time goes by things start to get even worse\n"+
-            "and you realise that the ship is starting to flip over...\n"+
+            "and you realise that the ship is starting to flip over...\n"
+            "All of the emergency boats are fully occupied by now...\n"+
             "The time is limited and there's a decision to be made...\n\n"+
             "Jump in the water and try to survive swimming?\n"+
             "OR\n"+
@@ -103,9 +104,9 @@ def jump_or_stay():
                   "Regardless the efforts and due to the high waves...\n\n"+
                   "You couldn't survive and you drown... :(\n"+
                   "GAME OVER!!!\n\n"+
-                  "WOULD YOU LIKE TO TRY AGAIN ???\n"
-        )
-        
+                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
+        game_over_jump = input()
+        slowprint(game_over_jump)
     elif jump_stay.capitalize() == "Stay":
         print("You decide to stay...")
     else:
