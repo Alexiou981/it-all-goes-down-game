@@ -49,11 +49,11 @@ def choose_transportation():
     """
     slowprint("How would you like to travel? (Plane/Ship)\n")
     transportation_vehicle = input()
-    if transportation_vehicle == "Plane":
+    if transportation_vehicle.capitalize() == "Plane":
         slowprint("You have chosen to travel by aeroplane...\n")
         slowprint("You arrive at the airport and check in...\n")
         slowprint("You board the aircraft and your flight takes off...\n")
-    elif transportation_vehicle == "Ship":
+    elif transportation_vehicle.capitalize() == "Ship":
         slowprint("You have chosen to travel by ship...\n")
         slowprint("You arrive at the port, get your tickets and board the ship...\n")
         slowprint("As soon as you locate the cabin the ship sets sale...\n")
