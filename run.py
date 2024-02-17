@@ -1,10 +1,12 @@
 from settings import slowprint 
+from ascii import airplane_or_ship
 
 def intro_question():
     """
     Welcomes player to the game and asks question to begin the game
     """
     slowprint("Welcome to It All Goes Down game.\n\n")
+    
     while True:
         slowprint("Would you like to embark on this adventure? (Yes/No)\n")
         user_answer = input("")
@@ -48,6 +50,7 @@ def choose_transportation():
     Means of transport functions, asks the user which vehicle of choice
     they prefer and unfolds storing depending on players choice.
     """
+    print(airplane_or_ship)
     slowprint("How would you like to travel? (Plane/Ship)\n")
     transportation_vehicle = input()
     if transportation_vehicle.capitalize() == "Plane":
