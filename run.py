@@ -95,7 +95,17 @@ def choose_transportation():
 def jump_or_stay():
     jump_stay = input()
     if jump_stay.capitalize() == "Jump":
-        print("You jumped and swam...")
+        slowprint("You jumped in the water...\n"+
+                  "It's colder than you expected it to be...\n"+
+                  "The waves are massive and you are struggling to surface...\n\n"+
+                  "You did not get a life jacket before you jump...\n"+
+                  "Your clothes are soaked and they're getting heavier...\n"+
+                  "Regardless the efforts and due to the high waves...\n\n"+
+                  "You couldn't survive and you drown... :(\n"+
+                  "GAME OVER!!!\n\n"+
+                  "WOULD YOU LIKE TO TRY AGAIN ???\n"
+        )
+        
     elif jump_stay.capitalize() == "Stay":
         print("You decide to stay...")
     else:
