@@ -25,11 +25,14 @@ def start_game():
     and begins to unfold the story of the game.
     """
     player_name = input("What is your characters name? \n")
-    while player_name.isnumeric():
+    while not player_name.isalpha():
         print("You have entered an invalid value!!!")
         player_name = input("What is your characters name? \n")
+        continue
     else:
         slowprint(f"Nice to meet you {player_name.capitalize()}. Let the adventure begin... \n")
+        
+        
     
     slowprint("After years and years of hard work, blood, sweat and tears...\n") 
     slowprint("You have finally managed to save enough money to embark on\n")
