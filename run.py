@@ -1,4 +1,7 @@
-from settings import slowprint 
+from settings import (
+                    slowprint,
+                    slowprint_ascii
+)
 from ascii import airplane_or_ship
 
 def intro_question():
@@ -50,8 +53,8 @@ def choose_transportation():
     Means of transport functions, asks the user which vehicle of choice
     they prefer and unfolds storing depending on players choice.
     """
-    print(airplane_or_ship)
-    slowprint("How would you like to travel? (Plane/Ship)\n")
+    slowprint_ascii(airplane_or_ship)
+    slowprint("\nHow would you like to travel? (Plane/Ship)\n")
     transportation_vehicle = input()
     if transportation_vehicle.capitalize() == "Plane":
         slowprint(
