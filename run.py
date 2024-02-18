@@ -4,12 +4,14 @@ from settings import (
                     slowprint,
                     slowprint_ascii
 )
+
 from ascii import (
                     airplane_or_ship,
                     ship,
                     airplane,
                     bang
-    )
+)
+
 
 def intro_question():
     """
@@ -143,6 +145,7 @@ def choose_transportation():
         print("Means of transportation needs to be either Plane or Ship")
         choose_transportation()
 
+
 def jump_or_stay():
     """
     This function checks what has the user decided whether to 
@@ -160,7 +163,7 @@ def jump_or_stay():
             "You couldn't survive and you drown... :(\n"+
             "GAME OVER!!!\n\n"+
             "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
-        jump_game_over()
+        try_again()
     elif jump_stay.capitalize() == "Stay":
         print(
             "You decide to stay...\n"+
@@ -193,26 +196,32 @@ def jump_or_stay():
         jump_or_stay()
 
 
-def jump_game_over():
+def try_again():
     """
-    Jump decision leads to game over, this function asks user if they want to play again,
-    depending on the input the game either restarts, prints goodbye message to user or 
-    outputs error message when an empty value was input or anything else but Yes or No.
+    This function takes the user answer Yes or No and acts accordingly.
+    If no value is added then it prints and error message explaining,
+    which values are valid.
     """
     while True:
-        game_over_jump = input()
-        if game_over_jump.capitalize() == "Yes":
+        try_again_answer = input()
+        if try_again_answer.capitalize() == "Yes":
             os.system("clear")
             main()
             break
-        elif game_over_jump. capitalize() == "No":
+        elif try_again_answer.capitalize() == "No":
             slowprint("It's so sad to see you go... Thanks for playing the game :D\n")
-            slowprint("\nGoodbye for now!!!\n\n")
+            slowprint("\nGoodbye for now!!!\n")
             break
         else:
             print("You have entered an invalid value, please reply with Yes or No")
 
+
 def beach_or_explore():
+    """
+    This function takes the user decision Beach or Explore and executes code,
+    depending on users decision. It also ensure that no invalid values are being
+    input and explains to the user which values are valid.
+    """
     while True:
         beach_or_explore = input()
         if beach_or_explore.capitalize() == "Beach":
@@ -237,21 +246,6 @@ def beach_or_explore():
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
     
-def try_again():
-    while True:
-        try_again_answer = input()
-        if try_again_answer.capitalize() == "Yes":
-            os.system("clear")
-            main()
-            break
-        elif try_again_answer.capitalize() == "No":
-            slowprint("It's so sad to see you go... Thanks for playing the game :D\n")
-            slowprint("\nGoodbye for now!!!\n\n")
-            break
-        else:
-            print("You have entered an invalid value, please reply with Yes or No")
-
-
 
 def main():
     intro_question()
