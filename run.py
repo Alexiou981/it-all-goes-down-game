@@ -46,7 +46,7 @@ def start_game():
         
         
     
-    slowprint(
+    print(
         "\nAfter years and years of hard work, blood, sweat and tears...\n"+ 
         "You have finally managed to save enough money to embark on\n"+
         "that journey you've been longing for since you were a child.\n\n"+
@@ -64,12 +64,12 @@ def choose_transportation():
     slowprint("\nHow would you like to travel? (Plane/Ship)\n")
     transportation_vehicle = input()
     if transportation_vehicle.capitalize() == "Plane":
-        slowprint(
+        print(
             "You have chosen to travel by aeroplane...\n" +
             "You arrive at the airport and check in...\n" +
             "You board the aircraft and your flight takes off...\n")
         slowprint_ascii(airplane)
-        slowprint(
+        print(
             "\nEverything is running smoothly and the aircraft has now leveled...\n"+
             "The fasten your seatbelts sign swithes off...\n"+
             "Soon the mini bar service will be available...\n"+
@@ -85,7 +85,7 @@ def choose_transportation():
             "Only now you realise that theres something terrible going on...\n"+
             "You hear a loud noise, the lights go off and the oxygen masks drop...\n")
         slowprint_ascii(bang)
-        slowprint(
+        print(
             "\nA loud noise sound as if something exploded...\n"
             "You can feel that the airplane is descending and\n"+ 
             "accelerating at the same time...\n"+
@@ -108,12 +108,12 @@ def choose_transportation():
             )
         
     elif transportation_vehicle.capitalize() == "Ship":
-        slowprint(
+        print(
             "You have chosen to travel by ship...\n"+
             "You arrive at the port, get your tickets and board the ship...\n"+
             "As soon as you locate the cabin the ship sets sale...\n\n")
         slowprint_ascii(ship)
-        slowprint(    
+        print(    
             "\nYour voyage begins and everything seems to be running smooth...\n"+
             "You get yourself comfortable in your luxurious cabin,\n"+
             "and decide to head to the bar...\n\n"+
@@ -148,7 +148,7 @@ def jump_or_stay():
     """
     jump_stay = input()
     if jump_stay.capitalize() == "Jump":
-        slowprint("You jumped in the water...\n"+
+        print("You jumped in the water...\n"+
                   "It's colder than you expected it to be...\n"+
                   "The waves are massive and you are struggling to surface...\n\n"+
                   "You did not get a life jacket before you jump...\n"+
@@ -159,7 +159,7 @@ def jump_or_stay():
                   "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
         jump_game_over()
     elif jump_stay.capitalize() == "Stay":
-        slowprint("You decide to stay...\n"+
+        print("You decide to stay...\n"+
                   "Even though at first it seemed like an unwise choice...\n"+
                   "The crew has managed to distribute lifejackets to everyone...\n"+
                   "After having been fully equipped, you're being instructed\n"+
