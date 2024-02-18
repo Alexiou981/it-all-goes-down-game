@@ -86,12 +86,12 @@ def choose_transportation():
             "You hear a loud noise, the lights go off and the oxygen masks drop...\n")
         slowprint_ascii(bang)
         print(
-            "\nA loud noise sound as if something exploded...\n"
+            "\nA loud noise sounds as if something exploded...\n"
             "You can feel that the airplane is descending and\n"+ 
             "accelerating at the same time...\n"+
             "The captain announces that his lost full control of the aircraft...\n"+
             "People are losing control and all you can hear is screaming and crying...\n\n"+
-            "The crew shouting... BRACE BRACE BRACE!\n"+
+            "The crew is shouting... BRACE BRACE BRACE!\n"+
             "You brace for impact, everything happens so fast and you try to remain calm...\n"+
             "Everything goes dark, the plane crashes and you are unconsious...\n\n"+
             "DARKNESS EVERYWHERE...\n\n"
