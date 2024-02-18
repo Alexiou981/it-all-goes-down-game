@@ -107,7 +107,7 @@ def choose_transportation():
             "Stay at the beach, try to find food and water and rest a bit more?\n"+
             "(Beach/Explore)?"
             )
-        remain_at_beach()
+        beach_or_explore()
         
     elif transportation_vehicle.capitalize() == "Ship":
         print(
@@ -187,7 +187,7 @@ def jump_or_stay():
             "Stay at the beach, try to find food and water and rest a bit more?\n"+
             "(Beach/Explore)?"
             )
-        remain_at_beach()
+        beach_or_explore()
     else:
         print("You've entered an invalid value, please reply with Jump or Stay")
         jump_or_stay()
@@ -212,7 +212,7 @@ def jump_game_over():
         else:
             print("You have entered an invalid value, please reply with Yes or No")
 
-def remain_at_beach():
+def beach_or_explore():
     while True:
         beach_or_explore = input()
         if beach_or_explore.capitalize() == "Beach":
