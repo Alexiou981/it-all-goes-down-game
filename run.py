@@ -6,7 +6,8 @@ from settings import (
 )
 from ascii import (
                     airplane_or_ship,
-                    ship
+                    ship,
+                    airplane
     )
 
 def intro_question():
@@ -66,6 +67,8 @@ def choose_transportation():
             "You have chosen to travel by aeroplane...\n" +
             "You arrive at the airport and check in...\n" +
             "You board the aircraft and your flight takes off...\n")
+        slowprint_ascii(airplane)
+        
     elif transportation_vehicle.capitalize() == "Ship":
         slowprint(
             "You have chosen to travel by ship...\n"+
