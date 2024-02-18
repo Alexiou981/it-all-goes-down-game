@@ -7,7 +7,8 @@ from settings import (
 from ascii import (
                     airplane_or_ship,
                     ship,
-                    airplane
+                    airplane,
+                    bang
     )
 
 def intro_question():
@@ -68,6 +69,40 @@ def choose_transportation():
             "You arrive at the airport and check in...\n" +
             "You board the aircraft and your flight takes off...\n")
         slowprint_ascii(airplane)
+        slowprint(
+            "\nEverything is running smoothly and the aircraft has now leveled...\n"+
+            "The fasten your seatbelts sign swithes off...\n"+
+            "Soon the mini bar service will be available...\n"+
+            "While you're waiting your browsing through the movies availabel to you...\n\n"+
+            "The cabin crew arrives with the food and drinks trolley...\n"+
+            "You choose to get a drink, since you're tired and want to get some sleep...\n\n"+
+            "A few moments later and whilst you're half asleep...\n"+
+            "You hear the captain announcing that we're expecting some sort of turbulence...\n"+
+            "The fasten your setbelt sign turns on and everyone is asked to return to their seats...\n\n"+
+            "As you look out of the window you relise that one of the wind turbines is on fire...\n"+
+            "Only now you realise that theres something terrible going on...\n"+
+            "You hear a loud noise, the lights go off and the oxygen masks drop...\n")
+        slowprint_ascii(bang)
+        slowprint(
+            "\nA loud noise sound as if something exploded\n"
+            "You can feel that the airplane is descending and accelerating at the same time...\n"+
+            "The captain announces that his lost full control of the aircraft...\n"+
+            "People are losing control and all you can hear is screaming and crying...\n\n"+
+            "The crew shouting... BRACE BRACE BRACE!\n"+
+            "You brace for impact, everything happens so fast and you try to remain calm...\n"+
+            "Everything goes dark, the plane crashes and you are unconsious...\n\n"+
+            "DARKNESS EVERYWHERE...\n\n"
+            "A few hours later...\n\n"+
+            "You wake up on a beach with barely any clothes on left from the tragedy...\n"+
+            "You feel your whole body aching and extremely dehydrated...\n"+
+            "The sun is getting hotter and hotter...\n\n"+
+            "You need to find yourself shelter, clothing, water and food...\n"+
+            "You look left and right...\n"+
+            "And realise that there is some sort of a forest at the end of the beach...\n\n"+
+            "Would you like to explore the forrest for any useful objects for survival?\n"+
+            "OR\n"+
+            "Stay at the beach, try to find food and water and rest a bit more?\n"
+            )
         
     elif transportation_vehicle.capitalize() == "Ship":
         slowprint(
