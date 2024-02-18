@@ -223,6 +223,7 @@ def beach_or_explore():
                   "dehydtation kicks in and you end up dying on the beach...\n"
                   "GAME OVER :(\n" 
                   "Would you like to try again?")
+            try_again()
             break
         elif beach_or_explore.capitalize() == "Explore":
             print("You decice to explore the forest...\n"+
@@ -236,6 +237,21 @@ def beach_or_explore():
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
     
+def try_again():
+    while True:
+        try_again_answer = input()
+        if try_again_answer.capitalize() == "Yes":
+            os.system("clear")
+            main()
+            break
+        elif try_again_answer.capitalize() == "No":
+            slowprint("It's so sad to see you go... Thanks for playing the game :D\n")
+            slowprint("\nGoodbye for now!!!\n\n")
+            break
+        else:
+            print("You have entered an invalid value, please reply with Yes or No")
+
+
 
 def main():
     intro_question()
