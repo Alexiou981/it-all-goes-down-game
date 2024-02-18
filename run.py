@@ -220,7 +220,12 @@ def beach_or_explore():
             break
         elif beach_or_explore.capitalize() == "Explore":
             print("You decice to explore the forest...\n"+
-                  "You head towards it...\n")
+                  "You head towards it...\n"+
+                  "After having entered the tropical forest and walked for several hours...\n"+
+                  "you came across a lake with fresh water, with many fish swimming in it\n"+ 
+                  "and animals drinking water from it...\n\n"+ 
+                  "After so many hours of being unconsious you feel extremely dehydrated...\n"+ 
+                  "Would you like to drink from the lake? (Yes/No)")
             break
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
