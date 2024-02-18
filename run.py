@@ -222,7 +222,14 @@ def drink_from_lake():
         if drink_answer.capitalize() == "Yes":
             print("You drink plenty of water rehydrate yourself...\n"+
                   "And continue to your adventure...\n"+
-                  "In the search of food, shelter and more water...\n")
+                  "In the search of food, shelter and more water...\n\n"+
+                  "You move a little bit further inside the forrest...\n"+ 
+                  "You come accross some fruit trees. As you get closer realise...\n" +
+                  "Those trees are banana trees and have plenty of fruits on them...\n\n"+ 
+                  "You climb one of them and gather a bunch,\n"+ 
+                  "You eat and regain back all the energy that you lost during the crash...\n"+ 
+                  "You start to feel normal again and start walking accross the forest...\n"+
+                  "Ready to face any challenge...\n")
             break
         elif drink_answer.capitalize() == "No":
             print("You die of starvation... GAME OVER :(:(:(\n"+
@@ -260,13 +267,6 @@ def beach_or_explore():
                   "After so many hours of being unconsious you feel extremely dehydrated...\n"+ 
                   "Would you like to drink from the lake? (Yes/No)")
             drink_from_lake()
-            print("You move a little bit further inside the forrest...\n"+ 
-                  "You come accross some fruit trees. As you get closer realise...\n" +
-                  "Those trees are banana trees and have plenty of fruits on them...\n\n"+ 
-                  "You climb one of them and gather a bunch,\n"+ 
-                  "You eat and regain back all the energy that you lost during the crash...\n"+ 
-                  "You start to feel normal again and start walking accross the forest...\n"+
-                  "Ready to face any challenge...\n")
             break
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
