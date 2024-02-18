@@ -1,3 +1,5 @@
+import os
+
 from settings import (
                     slowprint,
                     slowprint_ascii
@@ -99,6 +101,10 @@ def choose_transportation():
         choose_transportation()
 
 def jump_or_stay():
+    """
+    This function checks what has the user decided whether to 
+    Jump or Stay and prints output depending on decision.
+    """
     jump_stay = input()
     if jump_stay.capitalize() == "Jump":
         slowprint("You jumped in the water...\n"+
@@ -110,14 +116,33 @@ def jump_or_stay():
                   "You couldn't survive and you drown... :(\n"+
                   "GAME OVER!!!\n\n"+
                   "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
-        game_over_jump = input()
-        slowprint(game_over_jump)
+        jump_game_over()
     elif jump_stay.capitalize() == "Stay":
         print("You decide to stay...")
     else:
         print("You've entered an invalid value, please reply with Jump or Stay")
         jump_or_stay()
 
+
+def jump_game_over():
+    """
+    Jump decision leads to game over, this function asks user if they want to play again,
+    depending on the inpup the game either restarts, print goodbye message to user or 
+    outputs error message when an empty value was input or anything else but Yes or No.
+    """
+    while True:
+        game_over_jump = input()
+        if game_over_jump.capitalize() == "Yes":
+            os.system("clear")
+            main()
+            break
+        elif game_over_jump. capitalize() == "No":
+            slowprint("It's so sad to see you go... Thanks for playing the game :D\n")
+            slowprint("\nGoodbye for now!!!\n\n")
+            break
+        else:
+            print("You have entered an invalid value, please reply with Yes or No")
+            
 
 def main():
     intro_question()
