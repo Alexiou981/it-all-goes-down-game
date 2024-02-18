@@ -104,8 +104,10 @@ def choose_transportation():
             "And realise that there is some sort of a forest at the end of the beach...\n\n"+
             "Would you like to explore the forrest for any useful objects for survival?\n"+
             "OR\n"+
-            "Stay at the beach, try to find food and water and rest a bit more?\n"
+            "Stay at the beach, try to find food and water and rest a bit more?\n"+
+            "(Beach/Explore)?"
             )
+        remain_at_beach()
         
     elif transportation_vehicle.capitalize() == "Ship":
         print(
@@ -182,8 +184,10 @@ def jump_or_stay():
             "And realise that there is some sort of a forest at the end of the beach...\n\n"+
             "Would you like to explore the forrest for any useful objects for survival?\n"+
             "OR\n"+
-            "Stay at the beach, try to find food and water and rest a bit more?\n"
+            "Stay at the beach, try to find food and water and rest a bit more?\n"+
+            "(Beach/Explore)?"
             )
+        remain_at_beach()
     else:
         print("You've entered an invalid value, please reply with Jump or Stay")
         jump_or_stay()
@@ -192,7 +196,7 @@ def jump_or_stay():
 def jump_game_over():
     """
     Jump decision leads to game over, this function asks user if they want to play again,
-    depending on the inpup the game either restarts, print goodbye message to user or 
+    depending on the input the game either restarts, prints goodbye message to user or 
     outputs error message when an empty value was input or anything else but Yes or No.
     """
     while True:
@@ -207,7 +211,20 @@ def jump_game_over():
             break
         else:
             print("You have entered an invalid value, please reply with Yes or No")
-            
+
+def remain_at_beach():
+    while True:
+        beach_or_explore = input()
+        if beach_or_explore.capitalize() == "Beach":
+            print("You stayed at the beach...")
+            break
+        elif beach_or_explore.capitalize() == "Explore":
+            print("You decice to explore the forest...\n"+
+                  "You head towards it...\n")
+            break
+        else:
+            print("You've entered an invalid value. Please reply Beach or Explore")
+    
 
 def main():
     intro_question()
