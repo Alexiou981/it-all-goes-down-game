@@ -148,40 +148,42 @@ def jump_or_stay():
     """
     jump_stay = input()
     if jump_stay.capitalize() == "Jump":
-        print("You jumped in the water...\n"+
-                  "It's colder than you expected it to be...\n"+
-                  "The waves are massive and you are struggling to surface...\n\n"+
-                  "You did not get a life jacket before you jump...\n"+
-                  "Your clothes are soaked and they're getting heavier...\n"+
-                  "Regardless the efforts and due to the high waves...\n\n"+
-                  "You couldn't survive and you drown... :(\n"+
-                  "GAME OVER!!!\n\n"+
-                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
+        print(
+            "You jumped in the water...\n"+
+            "It's colder than you expected it to be...\n"+
+            "The waves are massive and you are struggling to surface...\n\n"+
+            "You did not get a life jacket before you jump...\n"+
+            "Your clothes are soaked and they're getting heavier...\n"+
+            "Regardless the efforts and due to the high waves...\n\n"+
+            "You couldn't survive and you drown... :(\n"+
+            "GAME OVER!!!\n\n"+
+            "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
         jump_game_over()
     elif jump_stay.capitalize() == "Stay":
-        print("You decide to stay...\n"+
-                  "Even though at first it seemed like an unwise choice...\n"+
-                  "The crew has managed to distribute lifejackets to everyone...\n"+
-                  "After having been fully equipped, you're being instructed\n"+
-                  "to evacuate the ship safely...\n\n"+
-                  "You're now inside the water and you can barely see the ship,\n"+
-                  "as most of it is sunk already...\n"+
-                  "The temperature of the water is really low and the waves are massive...\n\n"+
-                  "Despite your efforts to stand still and remain in groups,\n"+
-                  "strong currents take you away and whilst trying to go against them...\n"+
-                  "You exhaust yourself and fall unconsioucs, a big wave hits you...\n\n"+
-                  "Everything goes dark...\n\n"+
-                  "A few hours later...\n\n"+
-                  "You wake up on a beach with barely any clothes on left from the tragedy...\n"+
-                  "You feel your whole body aching and extremely dehydrated...\n"+
-                  "The sun is getting hotter and hotter...\n\n"+
-                  "You need to find yourself shelter, clothing, water and food...\n"+
-                  "You look left and right...\n"+
-                  "And realise that there is some sort of a forest at the end of the beach...\n\n"+
-                  "Would you like to explore the forrest for any useful objects for survival?\n"+
-                  "OR\n"+
-                  "Stay at the beach, try to find food and water and rest a bit more?\n"
-                  )
+        print(
+            "You decide to stay...\n"+
+            "Even though at first it seemed like an unwise choice...\n"+
+            "The crew has managed to distribute lifejackets to everyone...\n"+
+            "After having been fully equipped, you're being instructed\n"+
+            "to evacuate the ship safely...\n\n"+
+            "You're now inside the water and you can barely see the ship,\n"+
+            "as most of it is sunk already...\n"+
+            "The temperature of the water is really low and the waves are massive...\n\n"+
+            "Despite your efforts to stand still and remain in groups,\n"+
+            "strong currents take you away and whilst trying to go against them...\n"+
+            "You exhaust yourself and fall unconsioucs, a big wave hits you...\n\n"+
+            "Everything goes dark...\n\n"+
+            "A few hours later...\n\n"+
+            "You wake up on a beach with barely any clothes on left from the tragedy...\n"+
+            "You feel your whole body aching and extremely dehydrated...\n"+
+            "The sun is getting hotter and hotter...\n\n"+
+            "You need to find yourself shelter, clothing, water and food...\n"+
+            "You look left and right...\n"+
+            "And realise that there is some sort of a forest at the end of the beach...\n\n"+
+            "Would you like to explore the forrest for any useful objects for survival?\n"+
+            "OR\n"+
+            "Stay at the beach, try to find food and water and rest a bit more?\n"
+            )
     else:
         print("You've entered an invalid value, please reply with Jump or Stay")
         jump_or_stay()
