@@ -78,14 +78,17 @@ def choose_transportation():
             "You choose to get a drink, since you're tired and want to get some sleep...\n\n"+
             "A few moments later and whilst you're half asleep...\n"+
             "You hear the captain announcing that we're expecting some sort of turbulence...\n"+
-            "The fasten your setbelt sign turns on and everyone is asked to return to their seats...\n\n"+
-            "As you look out of the window you relise that one of the wind turbines is on fire...\n"+
+            "The fasten your setbelt sign turns on and everyone is asked\n"+
+            "to return to their seats...\n\n"+
+            "As you look out of the window you realise,\n"+ 
+            "that one of the wind turbines is on fire...\n"+
             "Only now you realise that theres something terrible going on...\n"+
             "You hear a loud noise, the lights go off and the oxygen masks drop...\n")
         slowprint_ascii(bang)
         slowprint(
-            "\nA loud noise sound as if something exploded\n"
-            "You can feel that the airplane is descending and accelerating at the same time...\n"+
+            "\nA loud noise sound as if something exploded...\n"
+            "You can feel that the airplane is descending and\n"+ 
+            "accelerating at the same time...\n"+
             "The captain announces that his lost full control of the aircraft...\n"+
             "People are losing control and all you can hear is screaming and crying...\n\n"+
             "The crew shouting... BRACE BRACE BRACE!\n"+
