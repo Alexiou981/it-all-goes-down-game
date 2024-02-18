@@ -216,6 +216,19 @@ def try_again():
             print("You have entered an invalid value, please reply with Yes or No")
 
 
+def drink_from_lake():
+    while True:
+        drink_answer = input()
+        if drink_answer.capitalize() == "Yes":
+            print("You drink all the water and the lake runs out...")
+            break
+        elif drink_answer.capitalize() == "No":
+            print("You die of starvation... GAME OVER :(:(:(")
+            break
+        else:
+            print("You've entered an invalid value. Please reply Yes or No ")
+
+
 def beach_or_explore():
     """
     This function takes the user decision Beach or Explore and executes code,
@@ -242,10 +255,12 @@ def beach_or_explore():
                   "and animals drinking water from it...\n\n"+ 
                   "After so many hours of being unconsious you feel extremely dehydrated...\n"+ 
                   "Would you like to drink from the lake? (Yes/No)")
+            drink_from_lake()
             break
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
     
+
 
 def main():
     intro_question()
