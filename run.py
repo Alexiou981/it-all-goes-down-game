@@ -216,7 +216,13 @@ def beach_or_explore():
     while True:
         beach_or_explore = input()
         if beach_or_explore.capitalize() == "Beach":
-            print("You stayed at the beach...")
+            print("You stayed at the beach...\n"+
+                  "You didn't find anything around, the night came in...\n"+  
+                  "It's too late now to visit the forest without any light or fire.\n\n"+
+                  "Since you haven't eaten or drunk for a long time,\n" 
+                  "dehydtation kicks in and you end up dying on the beach...\n"
+                  "GAME OVER :(\n" 
+                  "Would you like to try again?")
             break
         elif beach_or_explore.capitalize() == "Explore":
             print("You decice to explore the forest...\n"+
