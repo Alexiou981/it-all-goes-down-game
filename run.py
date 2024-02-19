@@ -48,7 +48,7 @@ def start_game():
         
         
     
-    print(
+    slowprint(
         "\nAfter years and years of hard work, blood, sweat and tears...\n"+ 
         "You have finally managed to save enough money to embark on\n"+
         "that journey you've been longing for since you were a child.\n\n"+
@@ -66,12 +66,12 @@ def choose_transportation():
     slowprint("\nHow would you like to travel? (Plane/Ship)\n")
     transportation_vehicle = input()
     if transportation_vehicle.capitalize() == "Plane":
-        print(
+        slowprint(
             "You have chosen to travel by aeroplane...\n" +
             "You arrive at the airport and check in...\n" +
             "You board the aircraft and your flight takes off...\n")
         slowprint_ascii(airplane)
-        print(
+        slowprint(
             "\nEverything is running smoothly and the aircraft has now leveled...\n"+
             "The fasten your seatbelts sign swithes off...\n"+
             "Soon the mini bar service will be available...\n"+
@@ -83,11 +83,11 @@ def choose_transportation():
             "The fasten your setbelt sign turns on and everyone is asked\n"+
             "to return to their seats...\n\n"+
             "As you look out of the window you realise,\n"+ 
-            "that one of the wind turbines is on fire...\n"+
+            "that one of the engine turbines is on fire...\n"+
             "Only now you realise that theres something terrible going on...\n"+
             "You hear a loud noise, the lights go off and the oxygen masks drop...\n")
         slowprint_ascii(bang)
-        print(
+        slowprint(
             "\nA loud noise sounds as if something exploded...\n"
             "You can feel that the airplane is descending and\n"+ 
             "accelerating at the same time...\n"+
@@ -112,12 +112,12 @@ def choose_transportation():
         beach_or_explore()
         
     elif transportation_vehicle.capitalize() == "Ship":
-        print(
+        slowprint(
             "You have chosen to travel by ship...\n"+
             "You arrive at the port, get your tickets and board the ship...\n"+
             "As soon as you locate the cabin the ship sets sale...\n\n")
         slowprint_ascii(ship)
-        print(    
+        slowprint(    
             "\nYour voyage begins and everything seems to be running smooth...\n"+
             "You get yourself comfortable in your luxurious cabin,\n"+
             "and decide to head to the bar...\n\n"+
@@ -153,7 +153,7 @@ def jump_or_stay():
     """
     jump_stay = input()
     if jump_stay.capitalize() == "Jump":
-        print(
+        slowprint(
             "You jumped in the water...\n"+
             "It's colder than you expected it to be...\n"+
             "The waves are massive and you are struggling to surface...\n\n"+
@@ -165,7 +165,7 @@ def jump_or_stay():
             "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
         try_again()
     elif jump_stay.capitalize() == "Stay":
-        print(
+        slowprint(
             "You decide to stay...\n"+
             "Even though at first it seemed like an unwise choice...\n"+
             "The crew has managed to distribute lifejackets to everyone...\n"+
@@ -188,7 +188,7 @@ def jump_or_stay():
             "Would you like to explore the forrest for any useful objects for survival?\n"+
             "OR\n"+
             "Stay at the beach, try to find food and water and rest a bit more?\n"+
-            "(Beach/Explore)?"
+            "(Beach/Explore)?\n"
             )
         beach_or_explore()
     else:
@@ -221,7 +221,7 @@ def drink_from_lake():
     while True:
         drink_answer = input()
         if drink_answer.capitalize() == "Yes":
-            print("You drink plenty of water rehydrate yourself...\n"+
+            slowprint("You drink plenty of water rehydrate yourself...\n"+
                   "And continue to your adventure...\n"+
                   "In the search of food, shelter and more water...\n\n"+
                   "You move a little bit further inside the forrest...\n"+ 
@@ -241,7 +241,7 @@ def drink_from_lake():
             uphill_downlhill()
             break
         elif drink_answer.capitalize() == "No":
-            print("You decide not to drink...\n"+
+            slowprint("You decide not to drink...\n"+
                   "Having walked for hours and hours,\n"+
                   "Unable to find any other source of water...\n\n"+
                   "You die from dehydtration...\n"+
@@ -262,7 +262,7 @@ def beach_or_explore():
     while True:
         beach_or_explore = input()
         if beach_or_explore.capitalize() == "Beach":
-            print("You stayed at the beach...\n"+
+            slowprint("You stayed at the beach...\n"+
                   "You didn't find anything around, the night came in...\n"+  
                   "It's too late now to visit the forest without any light or fire.\n\n"+
                   "Since you haven't eaten or drunk for a long time,\n" 
@@ -272,13 +272,13 @@ def beach_or_explore():
             try_again()
             break
         elif beach_or_explore.capitalize() == "Explore":
-            print("You decice to explore the forest...\n"+
+            slowprint("You decice to explore the forest...\n"+
                   "You head towards it...\n"+
                   "After having entered the tropical forest and walked for several hours...\n"+
                   "you came across a lake with fresh water, with many fish swimming in it\n"+ 
                   "and animals drinking water from it...\n\n"+ 
                   "After so many hours of being unconsious you feel extremely dehydrated...\n"+ 
-                  "Would you like to drink from the lake? (Yes/No)")
+                  "Would you like to drink from the lake? (Yes/No)\n")
             drink_from_lake()
             break
         else:
@@ -293,8 +293,8 @@ def uphill_downlhill():
     while True:
         uphill_downhill_answer = input()
         if uphill_downhill_answer.capitalize() == "Uphill":
-            print("You've decided to go uphill...\n"+
-                  "You choose to start walking up the hill/mountain...\n\n"+ 
+            slowprint("You've decided to go uphill...\n"+
+                  "You choose to start walking up the little mountain...\n\n"+ 
                   "After a few minutes of climbing you find a what appears to be like a trail,\n"+ 
                   "this is a good sign that other people have definitely been here before...\n"+ 
                   "Your hopes for survival raise significantly...\n\n"+
@@ -330,11 +330,11 @@ def uphill_downlhill():
                   "Coult it be humans???\n\n"+
                   "Now it's the time for a decision to be made...\n"+
                   "Your life depends on it...\n"+
-                  "Would you like to go West or East? (West/East)")
+                  "Would you like to go West or East? (West/East)\n")
             west_or_east()
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
-            print("You've decided to go downhill...\n"+
+            slowprint("You've decided to go downhill...\n"+
                   "You start to make your way downhill carefully...\n"+
                   "Despite the slippery ground you managed to get down,\n"+ 
                   "where the ground was flat again...\n"+ 
@@ -370,7 +370,7 @@ def west_or_east():
     while True:
         west_east_answer = input()
         if west_east_answer.capitalize() == "West":
-            print("You decide to go West...\n"+
+            slowprint("You decide to go West...\n"+
                   "You make your way toward what appeared to be buildings...\n\n"+
                   "Suddenly, you hear a ruslting noise from inside the woods...\n"+
                   "You turn around and realise that there is a Wild Boar\n"+
@@ -384,7 +384,7 @@ def west_or_east():
             fight_flight_wboar()
             break
         elif west_east_answer.capitalize() == "East":
-            print("You decide to go East...\n"+
+            slowprint("You decide to go East...\n"+
                   "You start walking towards the direction that smoke was coming from...\n"+
                   "Luckily, the destination is not very far and within hours...\n"+
                   "You walk your way there and you finally arrive...\n\n"+
@@ -404,7 +404,7 @@ def fight_flight_wboar():
     while True:
         fight_flight_answer = input()
         if fight_flight_answer.capitalize() == "Fight":
-            print("You fight as hard as you can for your life...\n"+
+            slowprint("You fight as hard as you can for your life...\n"+
                   "You managed to stab it with the knife but it didn't seem to work...\n"+
                   "You're knife is stuck where you've previously stabbed it...\n"+
                   "Your only weapon now are your bear hands...\n\n"+
@@ -416,7 +416,7 @@ def fight_flight_wboar():
             try_again()
             break
         elif fight_flight_answer.capitalize() == "Flight":
-            print("You run away as fast as you can gor you life...\n"+
+            slowprint("You run away as fast as you can gor you life...\n"+
                   "You're looking for a shelter to protect you from the threat..\n"+
                   "As you continue running you come across a tall tree...\n\n"+
                   "You manage to climb on it fast enough to avoid the boar...\n"+
@@ -461,7 +461,7 @@ def stop_fire_seek_help():
     while True:
         stop_help_answer = input()
         if stop_help_answer.capitalize() == "Stop":
-            print("You've chosen to try and put out the fire...\n"+
+            slowprint("You've chosen to try and put out the fire...\n"+
                   "Having panicked as you came across it...\n"+
                   "You use the bottled water from inside your sack...\n\n"+
                   "This was not effective at all...\n"+
@@ -473,7 +473,7 @@ def stop_fire_seek_help():
             try_again()
             break
         elif stop_help_answer.capitalize() == "Help":
-            print("You've decided to seek out for help...\n"+
+            slowprint("You've decided to seek out for help...\n"+
                   "You run as fast as you can giving everything you've got...\n"+
                   "Luckily, you soon come accross a small vilage...\n\n"+
                   "There are a few people out on the streets...\n"+
