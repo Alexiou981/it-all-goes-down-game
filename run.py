@@ -292,7 +292,44 @@ def uphill_downlhill():
     while True:
         uphill_downhill_answer = input()
         if uphill_downhill_answer.capitalize() == "Uphill":
-            print("You've decided to go uphill, let's work those quads and hips.")
+            print("You've decided to go uphill...\n"+
+                  "You choose to start walking up the hill/mountain...\n\n"+ 
+                  "After a few minutes of climbing you find a what appears to be like a trail,\n"+ 
+                  "this is a good sign that other people have definitely been here before...\n"+ 
+                  "Your hopes for survival raise significantly...\n\n"+
+                  "You continue walking uphill and after a while of more walking...\n"+
+                  "The ground seems to start leveling and the top is closer than ever...\n\n"+
+                  "As you reach the top of the hill, and to your surprise...\n"+
+                  "You can see what appears to be a shelter...\n"+
+                  "Possibly build for those who go trailing there...\n\n"+
+                  "You run inside the shelter hoping to come accross another human being...\n"+
+                  "Desperate for help, food and medical care...\n"+
+                  "You're dissappointed to find that nobody is in...\n\n"+
+                  "To your own luck however, you find working facilities and beds...\n"+
+                  "This means that you can survive the night inside the shelter...\n"+
+                  "You have a look around the shelter...\n\n"+
+                  "You couldn't find any food anywhere...\n"+
+                  "However, you managed to spot some items that might appear useful later on...\n"+
+                  "Inside a small box you find...\n"+ 
+                  "a sack, clothing, matches, a knife, bottled water,\n"+ 
+                  "rope and a pair of binoculars...\n\n"+
+                  "You start to feel tired and decide to get some rest...\n\n"+
+                  "The next day as soon as the sun rises...\n"+
+                  "You get ready to continue your search for food and medical care...\n"+
+                  "The sack and items you found yesterday might appear to be useful...\n"+
+                  "You decide to take it and include inside the items you found...\n\n"+
+                  "It is a sunny day and the atmosphere clear of fog...\n"+
+                  "The shelter being located at the top of a hill,\n"+
+                  "gives you great visibility of the surrounding landscape...\n\n"+
+                  "You have a look around and try to decide which way to go...\n"+
+                  "On the West side of the shelter and far into the horizon...\n"+
+                  "Appear to be a few buildings or warehouses...\n\n"+
+                  "On the East side of the shelter, behind some trees...\n"+
+                  "You can spot some smoke coming up...\n" 
+                  "Coult it be humans???\n\n"+
+                  "Now it's the time for a decision to be made...\n"+
+                  "Your life depends on it...\n"+
+                  "Would you like to go West or East?")
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
             print("You've decided to go downhill, get ready for a slippery slope.")
