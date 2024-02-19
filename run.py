@@ -236,7 +236,7 @@ def drink_from_lake():
                   "On your right hand side, the path goes downhill but\n"+
                   "seems to be steeper...\n\n"+
                   "This is your time to take an important decision for your survival...\n"+
-                  "Would you like to go Uphill or Downlhill(Uphill/Downhill)?\n")
+                  "Would you like to go Uphill or Downlhill? (Uphill/Downhill)\n")
             uphill_downlhill()
             break
         elif drink_answer.capitalize() == "No":
@@ -245,7 +245,7 @@ def drink_from_lake():
                   "Unable to find any other source of water...\n\n"+
                   "You die from dehydtration...\n"+
                   "GAME OVER :(\n\n"+
-                  "Would you like to try again?\n")
+                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         else:
@@ -267,7 +267,7 @@ def beach_or_explore():
                   "Since you haven't eaten or drunk for a long time,\n" 
                   "dehydtation kicks in and you end up dying on the beach...\n"
                   "GAME OVER :(\n" 
-                  "Would you like to try again?")
+                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)")
             try_again()
             break
         elif beach_or_explore.capitalize() == "Explore":
@@ -329,7 +329,7 @@ def uphill_downlhill():
                   "Coult it be humans???\n\n"+
                   "Now it's the time for a decision to be made...\n"+
                   "Your life depends on it...\n"+
-                  "Would you like to go West or East?")
+                  "Would you like to go West or East? (West/East)")
             west_or_east()
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
@@ -353,7 +353,7 @@ def uphill_downlhill():
                   "During the night things get an unexpected turn...\n"+
                   "A poisonus snake bites you and you end up dying inside the cave...\n\n"
                   "GAME OVER :(\n"
-                  "Would you like to try again?\n")
+                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         else:
@@ -375,11 +375,37 @@ def west_or_east():
                   "Soon you realise that this fire was not intentional...\n"+
                   "The fire is spreading at a fast pace and the wind makes it worse...\n\n"+
                   "The time is limited and a decision needs to be made...\n"+
-                  "Would you try to Stop the fire or Seek Out for help?\n")
+                  "Would you try to Stop the fire or Seek Out for help?\n"+
+                  "(Stop/Help)\n")
+            stop_fire_seek_help()
             break
         else:
             print("You've entered an invalid value. Please reply West or East")
-    
+
+
+def stop_fire_seek_help():
+    while True:
+        stop_help_answer = input()
+        if stop_help_answer.capitalize() == "Stop":
+            print("You've chosen to try and put out the fire...\n"+
+                  "Having panicked as you came across it...\n"+
+                  "You use the bottled water from inside your sack...\n\n"+
+                  "This was not effective at all...\n"+
+                  "The flames have gotten bigger and bigger...\n"+
+                  "The smokes is so thick and by inhaling it you pass out...\n\n"+
+                  "The flames cover your body and you get roasted.\n"
+                  "GAME OVER :(\n"
+                  "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)")
+            try_again()
+            break
+        elif stop_help_answer.capitalize() == "Help":
+            print("You've decided to seek out for help...\n")
+            break
+        else:
+            print("You've entered an invalid value.\n"+
+                  "Please reply Put Out or Seek Help")
+
+
 def main():
     intro_question()
     choose_transportation()
