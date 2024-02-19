@@ -367,7 +367,15 @@ def west_or_east():
             print("You decide to go West...")
             break
         elif west_east_answer.capitalize() == "East":
-            print("You decide to go East...")
+            print("You decide to go East...\n"+
+                  "You start walking towards the direction that smoke was coming from...\n"+
+                  "Luckily, the destination is not very far and within hours...\n"+
+                  "You walk your way there and you finally arrive...\n\n"+
+                  "The closer you get the darker and thicker the smoke gets...\n"+
+                  "Soon you realise that this fire was not intentional...\n"+
+                  "The fire is spreading at a fast pace and the wind makes it worse...\n\n"+
+                  "The time is limited and a decision needs to be made...\n"+
+                  "Would you try to Stop the fire or Seek Out for help?\n")
             break
         else:
             print("You've entered an invalid value. Please reply West or East")
