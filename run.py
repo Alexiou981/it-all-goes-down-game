@@ -332,7 +332,28 @@ def uphill_downlhill():
                   "Would you like to go West or East?")
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
-            print("You've decided to go downhill, get ready for a slippery slope.")
+            print("You've decided to go downhill...\n"+
+                  "You start to make your way downhill carefully...\n"+
+                  "Despite the slippery ground you managed to get down,\n"+ 
+                  "where the ground was flat again...\n"+ 
+                  "This part of the island seems to be more rocky and desserted...\n\n"+
+                  "You walk for many miles and come accross what seems to be a cave...\n"+
+                  "That could possibly be your shelter for the night...\n"+
+                  "As you get closer you spot a backpack by the entrance of the cave...\n"+
+                  "Your hopes that there's other people on the island get up...\n\n"+
+                  "You decide to enter the cave and shout to see if anyone is inside...\n"+
+                  "You don't hear anything back and assume you're alone...\n"+
+                  "If there's nobody inside then whose is that backpack?\n\n"+
+                  "The night has fallen and you are tired...\n"+
+                  "Inside the cave it's pitch black and silent...\n"+
+                  "The silence and darkness nearly drive you mad...\n"+
+                  "Different scenarios of what could go wrong go through your mind...\n\n"+
+                  "Eventually you manage to fall asleep and rest until the morning...\n"+
+                  "During the night things get an unexpected turn...\n"+
+                  "A poisonus snake bites you and you end up dying inside the cave...\n\n"
+                  "GAME OVER :(\n"
+                  "Would you like to try again?\n")
+            try_again()
             break
         else:
             print("You've entered an invalid value. Please reply with Uphill or Downhill.")
