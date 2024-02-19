@@ -229,10 +229,21 @@ def drink_from_lake():
                   "You climb one of them and gather a bunch,\n"+ 
                   "You eat and regain back all the energy that you lost during the crash...\n"+ 
                   "You start to feel normal again and start walking accross the forest...\n"+
-                  "Ready to face any challenge...\n")
+                  "Ready to face any challenge...\n\n"+
+                  "After a while...\n"+
+                  "Having walked for several hours you path diverges in two...\n"+
+                  "On your left hand side, the path goes uphill...\n"+
+                  "On your right hand side, the path goes downhill but\n"+
+                  "seems to be steeper...\n\n"+
+                  "This is your time to take an important decision for your survival...\n"+
+                  "Would you like to go Uphill or Downlhill(Uphill/Downhill)?\n")
             break
         elif drink_answer.capitalize() == "No":
-            print("You die of starvation... GAME OVER :(:(:(\n"+
+            print("You decide not to drink...\n"+
+                  "Having walked for hours and hours,\n"+
+                  "Unable to find any other source of water...\n\n"+
+                  "You die from dehydtration...\n"+
+                  "GAME OVER :(\n\n"+
                   "Would you like to try again?\n")
             try_again()
             break
