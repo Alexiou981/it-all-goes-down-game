@@ -330,6 +330,7 @@ def uphill_downlhill():
                   "Now it's the time for a decision to be made...\n"+
                   "Your life depends on it...\n"+
                   "Would you like to go West or East?")
+            west_or_east()
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
             print("You've decided to go downhill...\n"+
@@ -359,6 +360,18 @@ def uphill_downlhill():
             print("You've entered an invalid value. Please reply with Uphill or Downhill.")
 
 
+def west_or_east():
+    while True:
+        west_east_answer = input()
+        if west_east_answer.capitalize() == "West":
+            print("You decide to go West...")
+            break
+        elif west_east_answer.capitalize() == "East":
+            print("You decide to go East...")
+            break
+        else:
+            print("You've entered an invalid value. Please reply West or East")
+    
 def main():
     intro_question()
     choose_transportation()
