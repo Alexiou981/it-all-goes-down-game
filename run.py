@@ -399,7 +399,39 @@ def stop_fire_seek_help():
             try_again()
             break
         elif stop_help_answer.capitalize() == "Help":
-            print("You've decided to seek out for help...\n")
+            print("You've decided to seek out for help...\n"+
+                  "You run as fast as you can giving everything you've got...\n"+
+                  "Luckily, you soon come accross a small vilage...\n\n"+
+                  "There are a few people out on the streets...\n"+
+                  "You find the first person you see in front of you,\n"+
+                  "and after managing to catch your breath you start explaining...\n\n"+
+                  "You prioritise mentioning about the fire and firefighters\n"+
+                  "are on the way to put out the fire...\n\n"+
+                  "You then explain to them about the tragedy you were in...\n"+
+                  "One of the villagers offers to give you a lift to the hospital...\n"+
+                  "There's no immediate access to an ambulance in that area...\n"+
+                  "And so he gives you a lift on a motorbike...\n\n"+
+                  "As you arrive at the hospital, doctors and nurses\n"+
+                  "take great care of you...\n"+
+                  "Once you starting to feel better...\n\n"+
+                  "You get in touch with your embassy and inform them you're a survivor...\n"+
+                  "They are surprised to hear that and reassure you a safe return at home...\n"+
+                  "To your surprise they inform you that so far you're the only survivor\n"+
+                  "of the crash...\n\n"+
+                  "The embassy manages to get you in touch with your family...\n"+
+                  "You inform them that you're safe and sound...\n"+
+                  "They sound delighted and extremely relieved...\n\n"+
+                  "In the meantime, the firefighters have managed to put it out...\n"+
+                  "They return to the hospital to thank you for informing them...\n"+
+                  "They're calling you a true hero...\n\n"+
+                  "Well Done for making out alive...\n"+
+                  "You might have lost the chance to visit your dream destination\n"+
+                  "but you did manage to Win Life!!!\n\n"+
+                  "Thanks for playing It All Goes Down :D\n"+
+                  "Would you like to play again? (Yes/No)\n\n")
+            try_again()
+            print("\nThis game was created for educational purposes by Evangelos Alexiou")
+            
             break
         else:
             print("You've entered an invalid value. Please reply Stop or Help.\n")
