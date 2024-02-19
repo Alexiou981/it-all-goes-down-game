@@ -416,7 +416,37 @@ def fight_flight_wboar():
             try_again()
             break
         elif fight_flight_answer.capitalize() == "Flight":
-            print("You run away and save your life")
+            print("You run away as fast as you can gor you life...\n"+
+                  "You're looking for a shelter to protect you from the threat..\n"+
+                  "As you continue running you come across a tall tree...\n\n"+
+                  "You manage to climb on it fast enough to avoid the boar...\n"+
+                  "You wait on top of the tree patiently...\n"+
+                  "Almost one hour has passed by and you are looking around\n"+
+                  "to ensure that the danger is now gone and the ground is safe...\n\n"+
+                  "You start making your way down and heading West...\n"+
+                  "You've used up so much energy during the chase and you feel\n"+
+                  "exhausted and extremely hungry...\n\n"+
+                  "Regardless the fatigue, the hunger and the pain you continue walking...\n"+
+                  "The more you walk you start to realise that the trees are getting\n"+
+                  "less and less, and those buildings seem to be closer than ever now...\n\n"+
+                  "As you're getting closer you're being approached by two uniformed men...\n"+
+                  "They see the condition you are in...\n"+
+                  "And they offer to help you immediately...\n\n"+
+                  "They take you to the nearest hospital and take you to the emergencies...\n"+
+                  "The doctors and nurser take great care of you...\n"+
+                  "A few moments later and having regained your strength...\n\n"+
+                  "You get in touch with your embassy and report as a survivor\n"+
+                  "of this tragedy...\n"+
+                  "To your surprise they inform you that you're the only survivor so far...\n"+
+                  "They also inform you that no ruins have been found yet...\n\n"+
+                  "Finally, you manage to get in touch with your family\n"+
+                  "and inform them that you are safe and sound...\n\n"+
+                  "Well done for surviving this adventure!!!\n"+
+                  "You might have lost the vacation of your dreams...\n"+
+                  "But you have certainly Won in Life!\n\n"+
+                  "Thanks for playing It All Goes Down!\n"+
+                  "Would you like to play again? (Yes/No)")
+            try_again()
             break
         else:
             print("You've entered an invalid value. Please reply Fight or Flight.")
@@ -474,8 +504,6 @@ def stop_fire_seek_help():
                   "Thanks for playing It All Goes Down :D\n"+
                   "Would you like to play again? (Yes/No)\n\n")
             try_again()
-            print("\nThis game was created for educational purposes by Evangelos Alexiou")
-            
             break
         else:
             print("You've entered an invalid value. Please reply Stop or Help.\n")
