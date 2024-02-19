@@ -380,6 +380,7 @@ def west_or_east():
                   "You start running trying to protect yourself from danger?\n"+
                   "(Fight/Flight)?"
                   )
+            fight_flight_wboar()
             break
         elif west_east_answer.capitalize() == "East":
             print("You decide to go East...\n"+
@@ -396,6 +397,19 @@ def west_or_east():
             break
         else:
             print("You've entered an invalid value. Please reply West or East")
+
+
+def fight_flight_wboar():
+    while True:
+        fight_flight_answer = input()
+        if fight_flight_answer.capitalize() == "Fight":
+            print("You fight and lose!")
+            break
+        elif fight_flight_answer.capitalize() == "Flight":
+            print("You run away and save your life")
+            break
+        else:
+            print("You've entered an invalid value. Please reply Fight or Flight.")
 
 
 def stop_fire_seek_help():
@@ -455,6 +469,8 @@ def stop_fire_seek_help():
             break
         else:
             print("You've entered an invalid value. Please reply Stop or Help.\n")
+
+
 
 
 def main():
