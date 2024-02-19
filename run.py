@@ -237,6 +237,7 @@ def drink_from_lake():
                   "seems to be steeper...\n\n"+
                   "This is your time to take an important decision for your survival...\n"+
                   "Would you like to go Uphill or Downlhill(Uphill/Downhill)?\n")
+            uphill_downlhill()
             break
         elif drink_answer.capitalize() == "No":
             print("You decide not to drink...\n"+
@@ -282,6 +283,22 @@ def beach_or_explore():
         else:
             print("You've entered an invalid value. Please reply Beach or Explore")
     
+def uphill_downlhill():
+    """
+    This function unveals the story depending on which path the player has decided 
+    to take. It also prints an error message if an empty or invalid answer has been 
+    typed in.
+    """
+    while True:
+        uphill_downhill_answer = input()
+        if uphill_downhill_answer.capitalize() == "Uphill":
+            print("You've decided to go uphill, let's work those quads and hips.")
+            break
+        elif uphill_downhill_answer.capitalize() == "Downhill":
+            print("You've decided to go downhill, get ready for a slippery slope.")
+            break
+        else:
+            print("You've entered an invalid value. Please reply with Uphill or Downhill.")
 
 
 def main():
