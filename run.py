@@ -402,8 +402,7 @@ def stop_fire_seek_help():
             print("You've decided to seek out for help...\n")
             break
         else:
-            print("You've entered an invalid value.\n"+
-                  "Please reply Put Out or Seek Help")
+            print("You've entered an invalid value. Please reply Stop or Help.\n")
 
 
 def main():
