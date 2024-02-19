@@ -210,7 +210,8 @@ def try_again():
             break
         elif try_again_answer.capitalize() == "No":
             slowprint("It's so sad to see you go... Thanks for playing the game :D\n")
-            slowprint("\nGoodbye for now!!!\n")
+            slowprint("\nGoodbye for now!!!\n\n")
+            slowprint("This game was created for educational purposes by Evangelos Alexiou\n")
             break
         else:
             print("You have entered an invalid value, please reply with Yes or No")
@@ -403,7 +404,16 @@ def fight_flight_wboar():
     while True:
         fight_flight_answer = input()
         if fight_flight_answer.capitalize() == "Fight":
-            print("You fight and lose!")
+            print("You fight as hard as you can for your life...\n"+
+                  "You managed to stab it with the knife but it didn't seem to work...\n"+
+                  "You're knife is stuck where you've previously stabbed it...\n"+
+                  "Your only weapon now are your bear hands...\n\n"+
+                  "After several minutes of fighting and struggling...\n"+
+                  "One of it's horns pierces right through your belly...\n"+
+                  "You bleed to death...\n\n"+
+                  "GAME OVER :(\n"
+                  "WOULD YOU LIKE TO TRY AGAIN? (Yes/No)")
+            try_again()
             break
         elif fight_flight_answer.capitalize() == "Flight":
             print("You run away and save your life")
