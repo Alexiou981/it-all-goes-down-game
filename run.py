@@ -361,6 +361,11 @@ def uphill_downlhill():
 
 
 def west_or_east():
+    """
+    This function gets the users decision to head West or East and unfolds the story
+    depending on the choice. It also prints an error if an empty or invalid values
+    has been typed in.
+    """
     while True:
         west_east_answer = input()
         if west_east_answer.capitalize() == "West":
@@ -384,6 +389,11 @@ def west_or_east():
 
 
 def stop_fire_seek_help():
+    """
+    This function gets the users decision to try to Stop the fire or Seek out for help,
+    depending on the choice the story takes a different turn. It also prints an error
+    if invalid or empty value has been input.
+    """
     while True:
         stop_help_answer = input()
         if stop_help_answer.capitalize() == "Stop":
@@ -438,6 +448,11 @@ def stop_fire_seek_help():
 
 
 def main():
+    """
+    This function includes the two basic functions that start the game,
+    use this and call the main function which will run any functions called in it,
+    instead of having to call each function individually.
+    """
     intro_question()
     choose_transportation()
 
