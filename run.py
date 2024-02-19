@@ -369,7 +369,17 @@ def west_or_east():
     while True:
         west_east_answer = input()
         if west_east_answer.capitalize() == "West":
-            print("You decide to go West...")
+            print("You decide to go West...\n"+
+                  "You make your way toward what appeared to be buildings...\n\n"+
+                  "Suddenly, you hear a ruslting noise from inside the woods...\n"+
+                  "You turn around and realise that there is a Wild Boar\n"+
+                  "Looking towards you, preparing to attack...\n\n"+
+                  "You time is limited and your decision is necessary...\n"+
+                  "Do you try to defend yourself using the knive?\n"+
+                  "OR\n"+
+                  "You start running trying to protect yourself from danger?\n"+
+                  "(Fight/Flight)?"
+                  )
             break
         elif west_east_answer.capitalize() == "East":
             print("You decide to go East...\n"+
