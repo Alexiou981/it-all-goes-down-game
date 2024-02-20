@@ -1,7 +1,10 @@
 # IT ALL GOES DOWN ADVENTURE GAME
 
+It All Goes Down is a command-line based adventure game that allows the user to choose which turn of events the story will take, depending on the decisions made when asked at various points throughout the story. The game runs on Heroku at the mock Terminal created by Code Institute.
 
-The live site can be found [here]()
+The user goal is to try and make it out alive and overcome all challenges that have to be faced whilts playing the game. As the story unfolds the player is asked to make various decisions, those need to be made wisely since some decision are fatal and lead to a game over.
+
+The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuapp.com/)
 
 
 
@@ -9,7 +12,11 @@ The live site can be found [here]()
 ### *Existing Features*
 
 - __Landing Page__
+    - The landing page welcomes the user asking them if they would like to play the game or not.
+    - If the user types in "Yes" then the game starts.
+    - If the user types in "No" then a goodbye message appears and the game ends.
 
+    ![Landing Page](assets/images/am-i-responsive.png)
 - __Gameplay Area__
 
 - __Win or Lose Screen__
