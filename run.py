@@ -258,12 +258,12 @@ def drink_from_lake():
                       "accross the forest...\n" +
                       "Ready to face any challenge...\n\n" +
                       "After a while...\n" +
-                      "Having walked for several hours" +
+                      "Having walked for several hours " +
                       "you path diverges in two...\n" +
                       "On your left hand side, the path goes uphill...\n" +
                       "On your right hand side, the path goes downhill but\n" +
                       "seems to be steeper...\n\n" +
-                      "This is your time to make an important" +
+                      "This is your time to make an important " +
                       "decision for your survival...\n" +
                       "Would you like to go Uphill or Downlhill? " +
                       "(Uphill/Downhill)\n")
