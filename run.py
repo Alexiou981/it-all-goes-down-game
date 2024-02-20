@@ -9,7 +9,8 @@ from ascii import (
                     airplane_or_ship,
                     ship,
                     airplane,
-                    bang
+                    bang,
+                    game_over
 )
 
 
@@ -116,7 +117,7 @@ def choose_transportation():
             "OR\n" +
             "Stay at the beach, try to find food and water " +
             "and rest a bit more?\n" +
-            "(Beach/Explore)?"
+            "(Beach/Explore)?\n"
             )
         beach_or_explore()
     elif transportation_vehicle.capitalize() == "Ship":
@@ -171,9 +172,10 @@ def jump_or_stay():
             "You did not get a life jacket before you jump...\n" +
             "Your clothes are soaked and they're getting heavier...\n" +
             "Regardless the efforts and due to the high waves...\n\n" +
-            "You couldn't survive and you drown... :(\n" +
-            "GAME OVER!!!\n\n" +
-            "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
+            "You couldn't survive and you drown...\n"
+            )
+        slowprint_ascii(game_over)
+        slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
         try_again()
     elif jump_stay.capitalize() == "Stay":
         slowprint(
@@ -273,9 +275,9 @@ def drink_from_lake():
             slowprint("You decide not to drink...\n" +
                       "Having walked for hours and hours,\n" +
                       "Unable to find any other source of water...\n\n" +
-                      "You die from dehydtration...\n" +
-                      "GAME OVER :(\n\n" +
-                      "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
+                      "You die from dehydtration...\n")
+            slowprint_ascii(game_over)
+            slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         else:
@@ -297,9 +299,9 @@ def beach_or_explore():
                       "It's too late now to visit the forest without " +
                       "any light or fire.\n\n" +
                       "Since you haven't eaten or drunk for a long time,\n" +
-                      "dehydtation kicks in and you die on the beach...\n" +
-                      "GAME OVER :(\n"
-                      "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)")
+                      "dehydtation kicks in and you die on the beach...\n")
+            slowprint_ascii(game_over)
+            slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         elif beach_or_explore.capitalize() == "Explore":
@@ -416,9 +418,9 @@ def uphill_downlhill():
                       "and rest until the morning...\n" +
                       "During the night things get an unexpected turn...\n" +
                       "A poisonus snake bites you and you end up dying " +
-                      "inside the cave...\n\n" +
-                      "GAME OVER :(\n" +
-                      "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
+                      "inside the cave...\n")
+            slowprint_ascii(game_over)
+            slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         else:
@@ -448,7 +450,7 @@ def west_or_east():
                       "OR\n" +
                       "You start running trying to protect yourself " +
                       "from danger?\n" +
-                      "(Fight/Flight)?"
+                      "(Fight/Flight)?\n"
                       )
             fight_flight_wboar()
             break
@@ -487,9 +489,9 @@ def fight_flight_wboar():
                       "Your only weapon now are your bear hands...\n\n" +
                       "After several minutes of fighting and struggling...\n" +
                       "One of it's horns pierces through your belly...\n" +
-                      "You bleed to death...\n\n" +
-                      "GAME OVER :(\n" +
-                      "WOULD YOU LIKE TO TRY AGAIN? (Yes/No)")
+                      "You bleed to death...\n")
+            slowprint_ascii(game_over)
+            slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         elif fight_flight_answer.capitalize() == "Flight":
@@ -562,9 +564,9 @@ def stop_fire_seek_help():
                       "The flames have gotten bigger and bigger...\n" +
                       "The smokes is so thick and by inhaling it " +
                       "you pass out...\n\n" +
-                      "The flames cover your body and you get roasted.\n" +
-                      "GAME OVER :(\n" +
-                      "WOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)")
+                      "The flames cover your body and you die...\n")
+            slowprint_ascii(game_over)
+            slowprint("\nWOULD YOU LIKE TO TRY AGAIN ??? (Yes/No)\n")
             try_again()
             break
         elif stop_help_answer.capitalize() == "Help":
