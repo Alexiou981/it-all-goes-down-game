@@ -13,7 +13,9 @@ from ascii import (
                     game_over,
                     beach,
                     diverged_path,
-                    mountain
+                    mountain,
+                    shelter,
+                    compass
 )
 
 
@@ -359,8 +361,10 @@ def uphill_downlhill():
                       "the top is closer than ever...\n\n" +
                       "As you reach the top of the hill, " +
                       "and to your surprise...\n" +
-                      "You can see what appears to be a shelter...\n" +
-                      "Possibly build for those who go trailing there...\n\n" +
+                      "You can see what appears to be a shelter...\n")
+            slowprint_ascii(shelter)
+            slowprint(
+                      "\nPossibly build for those who go trailing there...\n\n" +
                       "You run inside the shelter hoping " +
                       "to come accross another human being...\n" +
                       "Desperate for help, food and medical care...\n" +
@@ -400,8 +404,9 @@ def uphill_downlhill():
                       "You can spot some smoke coming up...\n" +
                       "Coult it be humans???\n\n" +
                       "Now it's the time for a decision to be made...\n" +
-                      "Your life depends on it...\n" +
-                      "Would you like to go West or East? (West/East)\n")
+                      "Your life depends on it...\n")
+            slowprint_ascii(compass)
+            slowprint("\nWould you like to go West or East? (West/East)\n")
             west_or_east()
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
