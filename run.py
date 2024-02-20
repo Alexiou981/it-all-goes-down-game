@@ -55,6 +55,8 @@ def start_game():
         "Crystal clear waters and golden sands covering it's perimeter.\n\n" +
         "Your departure destination is far away from this location and\n" +
         "your budget allows you to either fly or sail there...\n\n")
+    choose_transportation()
+    
 
 
 def choose_transportation():
@@ -627,7 +629,6 @@ def main():
     in it, instead of having to call each function individually.
     """
     intro_question()
-    choose_transportation()
 
 
 main()
