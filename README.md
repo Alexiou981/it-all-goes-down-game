@@ -120,9 +120,18 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 
 ### *Validator Testing*
 
+- Run.py file passed through PEP8 linter without any errors.
 
-### *Fixed Bugs* 
+![Run.py-Linter](assets/images/run.py-linter.png)
 
+- Ascii.py file passed through PEP8 linter without any errors.
+
+![Ascii.py-Linter](assets/images/ascii.py-linter.png)
+
+- Settings.py file passed through PEP8 linter without any errors.
+
+![Settings.py-Linter](assets/images/settings.py-linter.png)
+ 
 ### *Unfixed Bugs*
 - Not applicable.
 
