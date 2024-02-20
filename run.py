@@ -62,7 +62,6 @@ def start_game():
         "Your departure destination is far away from this location and\n" +
         "your budget allows you to either fly or sail there...\n\n")
     choose_transportation()
-    
 
 
 def choose_transportation():
@@ -365,7 +364,8 @@ def uphill_downlhill():
                       "You can see what appears to be a shelter...\n")
             slowprint_ascii(shelter)
             slowprint(
-                      "\nPossibly build for those who go trailing there...\n\n" +
+                      "\nPossibly build for those who go " +
+                      "trailing there...\n\n" +
                       "You run inside the shelter hoping " +
                       "to come accross another human being...\n" +
                       "Desperate for help, food and medical care...\n" +
@@ -561,7 +561,8 @@ def fight_flight_wboar():
                       "Well done for surviving this adventure!!!\n")
             slowprint_ascii(you_win)
             slowprint(
-                      "\nYou might have lost the vacation of your dreams...\n" +
+                      "\nYou might have lost the vacation " +
+                      "of your dreams...\n" +
                       "But you have certainly Won in Life!\n\n" +
                       "Thanks for playing It All Goes Down!\n" +
                       "Would you like to play again? (Yes/No)")
