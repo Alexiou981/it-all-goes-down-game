@@ -10,7 +10,10 @@ from ascii import (
                     ship,
                     airplane,
                     bang,
-                    game_over
+                    game_over,
+                    beach,
+                    diverged_path,
+                    mountain
 )
 
 
@@ -30,7 +33,7 @@ def intro_question():
             slowprint("Oh no, it's so sad to see you go. \n")
             break
         else:
-            print("You've entered an invalid value, please reply with a" +
+            print("You've entered an invalid value, please reply with a " +
                   "Yes or No. \n")
 
 
@@ -105,8 +108,10 @@ def choose_transportation():
             "Everything goes dark, the plane crashes " +
             "and you are unconsious...\n\n" +
             "DARKNESS EVERYWHERE...\n\n" +
-            "A few hours later...\n\n" +
-            "You wake up on a beach with barely any clothes on left " +
+            "A few hours later...\n")
+        slowprint_ascii(beach)
+        slowprint(
+            "\nYou wake up on a beach with barely any clothes on left " +
             "from the tragedy...\n" +
             "You feel your whole body aching and extremely dehydrated...\n" +
             "The sun is getting hotter and hotter...\n\n" +
@@ -196,8 +201,10 @@ def jump_or_stay():
             "You exhaust yourself and fall unconsioucs, " +
             "a big wave hits you...\n\n" +
             "Everything goes dark...\n\n" +
-            "A few hours later...\n\n" +
-            "You wake up on a beach with barely any clothes on " +
+            "A few hours later...\n")
+        slowprint_ascii(beach)
+        slowprint(
+            "\nYou wake up on a beach with barely any clothes on " +
             "left from the tragedy...\n" +
             "You feel your whole body aching and extremely dehydrated...\n" +
             "The sun is getting hotter and hotter...\n\n" +
@@ -257,14 +264,17 @@ def drink_from_lake():
                       "have plenty of fruits on them...\n\n" +
                       "You climb one of them and gather a bunch,\n" +
                       "You eat and regain back all the energy " +
-                      "that you lost during the crash...\n" +
-                      "You start to feel normal again and start walking " +
+                      "that you lost during the crash...\n")
+            slowprint(
+                      "\nYou start to feel normal again and start walking " +
                       "accross the forest...\n" +
                       "Ready to face any challenge...\n\n" +
                       "After a while...\n" +
                       "Having walked for several hours " +
-                      "you path diverges in two...\n" +
-                      "On your left hand side, the path goes uphill...\n" +
+                      "you path diverges in two...\n")
+            slowprint(diverged_path)
+            slowprint(
+                      "\nOn your left hand side, the path goes uphill...\n" +
                       "On your right hand side, the path goes downhill but\n" +
                       "seems to be steeper...\n\n" +
                       "This is your time to make an important " +
@@ -333,8 +343,10 @@ def uphill_downlhill():
     while True:
         uphill_downhill_answer = input()
         if uphill_downhill_answer.capitalize() == "Uphill":
-            slowprint("You've decided to go uphill...\n" +
-                      "You choose to start walking up " +
+            slowprint("You've decided to go uphill...\n")
+            slowprint_ascii(mountain)
+            slowprint(
+                      "\nYou choose to start walking up " +
                       "the little mountain...\n\n" +
                       "After a few minutes of climbing you find " +
                       "what appears to be like a trail,\n" +
@@ -393,8 +405,10 @@ def uphill_downlhill():
             west_or_east()
             break
         elif uphill_downhill_answer.capitalize() == "Downhill":
-            slowprint("You've decided to go downhill...\n" +
-                      "You start to make your way downhill carefully...\n" +
+            slowprint("You've decided to go downhill...\n")
+            slowprint_ascii(mountain)
+            slowprint(
+                      "\nYou start to make your way downhill carefully...\n" +
                       "Despite the slippery ground you get down safely,\n" +
                       "where the ground was flat again...\n" +
                       "This part of the island seems to be " +
