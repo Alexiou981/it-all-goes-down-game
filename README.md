@@ -86,9 +86,30 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 ![Game-Over](assets/images/game-over.png)
 
 ### *Potential Future Features*
+- Add more twists and turns to the story.
+- Offer more decision making to the user.
+- Add difficulty modes, and depending on user choice make the story harder or easier to win.
+- Implement the ability of being able to loot items and have limited storage depending on bag size.
+- Implement ability to add or remove items depending on needs.
+- Design the terminal even more.
+- Design CSS and add custom game background.
 
 ## **Mockup**
+- The planning before writing any code had been done using [Lucidcharts](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&km_CPC_CampaignId=1490375427&km_CPC_AdGroupID=55688909257&km_CPC_Keyword=lucidchart&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596043016&km_CPC_TargetID=kwd-33511936169&km_CPC_Country=9046553&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gad_source=1&gclid=CjwKCAiAuNGuBhAkEiwAGId4ak_DnJqkIQGh8_5ODViJ07z6jzUZbNnUYZEso-G56pdgrzHKGAynIRoCfnsQAvD_BwE).
 
+- The planning was split in three different sections:
+    - The functions map.
+        ![Functions-Map](assets/images/functions-map.png)
+    
+    - The game workflow.
+        ![Game-Workflow](assets/images/game-workflow.png)
+    
+    - The storyline.
+        ![Storyline1](assets/images/storyline1.png)
+
+        ![Storyline1](assets/images/storyline2.png)
+
+        ![Storyline1](assets/images/storyline3.png)
 
 ## **Testing**
 
