@@ -15,7 +15,8 @@ from ascii import (
                     diverged_path,
                     mountain,
                     shelter,
-                    compass
+                    compass,
+                    you_win
 )
 
 
@@ -557,8 +558,10 @@ def fight_flight_wboar():
                       "Finally, you manage to get in touch " +
                       "with your family\n" +
                       "and inform them that you are safe and sound...\n\n" +
-                      "Well done for surviving this adventure!!!\n" +
-                      "You might have lost the vacation of your dreams...\n" +
+                      "Well done for surviving this adventure!!!\n")
+            slowprint_ascii(you_win)
+            slowprint(
+                      "\nYou might have lost the vacation of your dreams...\n" +
                       "But you have certainly Won in Life!\n\n" +
                       "Thanks for playing It All Goes Down!\n" +
                       "Would you like to play again? (Yes/No)")
@@ -628,8 +631,10 @@ def stop_fire_seek_help():
                       "They return to the hospital to thank you " +
                       "for informing them...\n" +
                       "They're calling you a true hero...\n\n" +
-                      "Well Done for making out alive...\n" +
-                      "You might have lost the chance " +
+                      "Well Done for making out alive...\n")
+            slowprint_ascii(you_win)
+            slowprint(
+                      "\nYou might have lost the chance " +
                       "to visit your dream destination\n" +
                       "but you did manage to Win Life!!!\n\n" +
                       "Thanks for playing It All Goes Down :D\n" +
