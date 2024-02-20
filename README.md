@@ -113,7 +113,10 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 
 ## **Testing**
 
-
+- All questions have been thoroughly tested for invalid or empty input.
+- All of them functioned as they should and only continued to run the game when either of the desired inputs was typed in.
+- Tested on Macbook Pro 13" on Google Chrome, game was functioning as expected.
+- Tested on ASUS Zenbook 13" on Google Chrome, the game was functioning as expected on that laptop too.
 
 ### *Validator Testing*
 
