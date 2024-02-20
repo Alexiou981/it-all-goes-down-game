@@ -6,7 +6,7 @@ The user goal is to try and make it out alive and overcome all challenges that h
 
 The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuapp.com/)
 
-
+![am-I-responsive](assets/images/am-i-responsive.png)
 
 ## **Features**
 ### *Existing Features*
@@ -16,7 +16,7 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
     - If the user types in "Yes" then the game starts.
     - If the user types in "No" then a goodbye message appears and the game ends.
 
-    ![Landing Page](assets/images/am-i-responsive.png)
+
 - __Gameplay Area__
 
 - __Win or Lose Screen__
