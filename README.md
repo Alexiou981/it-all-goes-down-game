@@ -16,9 +16,18 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
     - If the user types in "Yes" then the game starts.
     - If the user types in "No" then a goodbye message appears and the game ends.
 
+![Landing-Image](assets/images/landing-image.png)
+- __Choose a Name Screen__
+    - As soon as the game begins the user is being asked to input their name.
 
-- __Gameplay Area__
+![Name-Screen](assets/images/name-screen.png)
 
+- __Transportation Decision__
+    - Once a name is type in the story begins to unfold.
+    - This is the first decision making stop of the game.
+    - The user is being asked to choose which means of transport they would like to travel with.
+
+![Tansportation-Screen](assets/images/transportation-decision.png)
 - __Win or Lose Screen__
 
 - __Exit Screen__
