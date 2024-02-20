@@ -42,10 +42,48 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
     - Depending on the games decision the story unfolds differently.
 
 ![Beach-Or-Explore](assets/images/beach-or-explore.png)
-- __Win or Lose Screen__
 
-- __Exit Screen__
+- __Drink From Lake__
+    - Depending on which decision the user has made, the story eventually come to that point in which the user finds a lake.
+    - Whether they decide to drink or not the story takes different turns.
 
+![Drink-From-Lake](assets/images/drink-from-lake.png)
+
+- __Uphill Or Downhill__
+    - The next decision the player comes accross is when the path after a while of walking splits in two opposite directions.
+    - The player is being asked whether they want to go uphill or downhill.
+
+![Uphill-Or-Downhill](assets/images/uphill-or-downhill.png)
+
+- __West Or East__
+    - Depending upon the previous decision the game at some point brings the player in need of making a decision.
+    - Head West depending on what you can see or East.
+
+![West-Or-East](assets/images/west-or-east.png)
+
+- __Fight Or Flight__
+    - Heading west leads to a life threatening situation and immediate danger.
+    - It's up to the player to decide whether to fight or flight for their life.
+
+![Fight-Or-Flight](assets/images/fight-or-flight.png)
+
+- __Stop Or Help__
+    - Heading east also leads to another life threatening scenario.
+    - Again, it's the players decision whether to try and put out the fire and try and seek out for help.
+
+![Stop-Or-Help](assets/images/stop-or-help.png)
+
+- __Win Screen__
+    - If you manage to make it out alive and your decision making for survival was effective then you come accross this screen.
+    - It also let's the user decide whether to play again or exit.
+
+![You-Win](assets/images/you-win.png)
+
+- __Game Over__
+    - If the wrong survival decisions have been made the user ends up on this screen.
+    - It also let's the user decide whether to play again or exit.
+
+![Game-Over](assets/images/game-over.png)
 
 ### *Potential Future Features*
 
