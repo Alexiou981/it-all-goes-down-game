@@ -282,7 +282,7 @@ def drink_from_lake():
                       "seems to be steeper...\n\n" +
                       "This is your time to make an important " +
                       "decision for your survival...\n" +
-                      "Would you like to go Uphill or Downlhill? " +
+                      "Would you like to go Uphill or Downhill? " +
                       "(Uphill/Downhill)\n")
             uphill_downlhill()
             break
