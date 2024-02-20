@@ -5,7 +5,7 @@ import time
 # By Debbie Bergstrom, def slow_print() function.
 
 
-def slowprint(text, delay=0.01):
+def slowprint(text, delay=0.02):
     for letter in text:
         sys.stdout.write(letter)
         sys.stdout.flush()
