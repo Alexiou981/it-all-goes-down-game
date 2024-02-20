@@ -28,6 +28,20 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
     - The user is being asked to choose which means of transport they would like to travel with.
 
 ![Tansportation-Screen](assets/images/transportation-decision.png)
+
+- __Stay or Jump Decision__
+    - Both the ship and the plane path end up in the same outcome.
+    - However, the ship paths offers the player with another moment of a necessity to make a decision.
+    - Jump from the sinking ship or wait for guidance from the crew.
+
+![Junp-Or-Stay](assets/images/jump-or-stay.png)
+
+- __Beach or Explore Decision__
+    - The next decision after which means of transport to choose, 
+    is whethere to stay at the beach or explore the forest for resources?
+    - Depending on the games decision the story unfolds differently.
+
+![Beach-Or-Explore](assets/images/beach-or-explore.png)
 - __Win or Lose Screen__
 
 - __Exit Screen__
