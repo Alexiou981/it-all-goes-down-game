@@ -136,6 +136,7 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 ## **Testing**
 
 - All questions have been thoroughly tested for invalid or empty input.
+    - Would you like to play the game? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
     - What's your characters name? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
     - How would you like to travel? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
     - Stay or Jump from ship? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
@@ -147,6 +148,7 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
     - Stop Fire or Seek Help? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
     - Would you like to try/play again? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
 - All of them functioned as they should and only continued to run the game when either of the desired inputs was typed in.
+    - Would you like to play the game? (Valid values have to be words only and as soon as the user types in a correct value the story begins).
     - What's your characters name? (Valid values have to be words only and as soon as the user types in a correct value the story begins).
     - How would you like to travel? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
     - Stay or Jump from ship? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
