@@ -132,7 +132,28 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 ## **Testing**
 
 - All questions have been thoroughly tested for invalid or empty input.
+    - What's your characters name? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - How would you like to travel? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Stay or Jump from ship? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Remain at Beach or Explore forrest? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Would you like to drink from lake? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Uphill or Downhill? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - West or East? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Fight or Flight? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Stop Fire or Seek Help? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
+    - Would you like to try/play again? (Empty and invalid values print out an error message to the user advising them which values are accepted. It does not matter what capitalisation is used as long as the words are written identically).
 - All of them functioned as they should and only continued to run the game when either of the desired inputs was typed in.
+    - What's your characters name? (Valid values have to be words only and as soon as the user types in a correct value the story begins).
+    - How would you like to travel? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Stay or Jump from ship? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Remain at Beach or Explore forrest? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Would you like to drink from lake? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Uphill or Downhill? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - West or East? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Fight or Flight? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Stop Fire or Seek Help? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+    - Would you like to try/play again? (Valid values have to be words only and as soon as the user types in a correct value the game continues).
+
 - Tested on Macbook Pro 13" on Google Chrome, game was functioning as expected.
 - Tested on ASUS Zenbook 13" on Google Chrome, the game was functioning as expected on that laptop too.
 
