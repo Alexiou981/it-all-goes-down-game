@@ -4,6 +4,8 @@ It All Goes Down is a command-line based adventure game that allows the user to 
 
 The user goal is to try and make it out alive and overcome all challenges that have to be faced whilts playing the game. As the story unfolds the player is asked to make various decisions, those need to be made wisely since some decision are fatal and lead to a game over.
 
+In terms of UX, this game is designed to offer entertainment to whoever decides to play it. Also, it is a good practice for anyone who would like to improve in decision making since some decision either make you win the game or die. All fatal decisions offer the abillity to play again, which means that the user can try as many time as they want until they reach their objective which is to survive the adventure.
+
 The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuapp.com/)
 
 ![am-I-responsive](assets/images/am-i-responsive.png)
