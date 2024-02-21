@@ -178,7 +178,10 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 
     
 ## **Credits**
-### *Content*
 
-### *Media* 
+- Code Institute for offering the template for the mock terminal on Heroku.
+- My mentor [Lauren-Nichole](https://github.com/CluelessBiker) for all the advice and guidance whilst working on this project.
+- The ascii art was taken from [fsymbols](https://fsymbols.com/text-art/) and [asciiart](https://www.asciiart.eu/)
+- The ascii compass (West/East decision) was taken from [here](https://emojicombos.com/compass-dot-art)
+- The code used as a slowprint function was taken from [here](https://github.com/DebbieBergstrom/Russian-Roulette/blob/main/all_functions.py) by Debbie Bergstrom.
 
