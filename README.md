@@ -117,17 +117,21 @@ The live site can be found [here](https://it-all-goes-down-530830bd039b.herokuap
 - The planning was split in three different sections:
 
     - The functions map.
+
         ![Functions-Map](assets/images/functions-map.png)
     
     - The game workflow.
+
         ![Game-Workflow](assets/images/game-workflow.png)
     
     - The storyline.
+
         ![Storyline1](assets/images/storyline1.png)
 
         ![Storyline1](assets/images/storyline2.png)
 
         ![Storyline1](assets/images/storyline3.png)
+
 
 ## **Testing**
 
